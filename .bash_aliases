@@ -1,22 +1,28 @@
+# Dotfiles repository
+alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
+
+
 # Navigation and listing
 alias ls="ls --color -F"
 alias ll="ls -lha"
 alias la="ls -a"
+alias lt='ls --human-readable --size -1 -S --classify | more'
+
 alias cd..="cd .."
 
+alias mnt='mount | grep -E ^/dev | column -t'
 
-# Make cd only autocomplete directories
+
+# Make cd only autocomplete directories and fix sudo
 complete -d cd
 complete -cf sudo
 
-# Fix bluetooth connection problem
-# pulseaudio-module-bluetooth must be apt installed
-# script in https://gist.github.com/pylover/d68be364adac5f946887b85e6ed6e7ae
-alias headphones="/usr/local/bin/a2dp.py 00:16:94:29:4F:47 -w 10"
 
 # Python venv activation
 alias venv="source ~/.venv/bin/activate"
-alias jn="~/.venv/bin/jupyter notebook ~/Projects/playground/"
 
 
-alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
+# If local aliases found, source it
+if [ -f ~/.bash_aliases.local ]; then
+    . ~/.bash_aliases.local
+fi
