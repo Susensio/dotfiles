@@ -15,7 +15,7 @@ alias mnt='mount | grep -E ^/dev | column -t'
 
 # Make cd only autocomplete directories and fix sudo
 complete -d cd
-complete -cf sudo
+#complete -cf sudo
 
 
 # Python venv activation
