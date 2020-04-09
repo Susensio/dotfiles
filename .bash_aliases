@@ -1,6 +1,6 @@
 # Dotfiles repository
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
-
+dotfiles pull > /dev/null & disown
 
 # Navigation and listing
 alias ls="ls --color -F"
