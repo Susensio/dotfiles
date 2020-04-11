@@ -2,6 +2,8 @@
 set number
 syntax on
 
+set clipboard=unnamedplus,autoselect
+
 " Enable mouse selection
 set mouse=a
 
@@ -23,3 +25,6 @@ cnoreabbrev wQ wq
 cnoreabbrev WQ wq
 cnoreabbrev W w
 cnoreabbrev Q q
+
+" Jump to the last position when reopening a file
+au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
