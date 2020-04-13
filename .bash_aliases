@@ -1,5 +1,14 @@
 # Dotfiles repository
-alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
+alias _dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
+dotfiles () { 
+	if [ "$1" == "cmp" ]; then
+		_dotfiles add -u
+		_dotfiles commit -m "$2"
+		_dotfiles push
+	else
+		_dotfiles "$@"
+	fi
+}
 dotfiles pull &> /dev/null & disown
 
 # Navigation and listing
