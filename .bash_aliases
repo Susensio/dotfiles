@@ -17,7 +17,12 @@ grepc () {
 	grep -E "$pattern|$" $file
 }
 
+# Only mounted devices
 alias mnt='mount | grep -E ^/dev | column -t'
+
+
+# Forward X11 in trusted mode, allows clipboard sharing on remote server
+alias ssh='ssh -Y'
 
 
 # Make cd only autocomplete directories and fix sudo
