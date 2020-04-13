@@ -7,6 +7,12 @@ set clipboard=unnamedplus,autoselect
 " Enable mouse selection
 set mouse=a
 
+" Indentation
+set autoindent
+set smartindent
+set tabstop=4
+set shiftwidth=4
+
 " Enable undo after file write
 if has('persistent_undo')
 	set undofile
