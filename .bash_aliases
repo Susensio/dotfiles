@@ -10,6 +10,13 @@ alias lt='ls --human-readable --size -1 -S --classify | more'
 
 alias cd..="cd .."
 
+# Colour without filtering
+grepc () {
+	pattern=$1
+	file=$2
+	grep -E "$pattern|$" $file
+}
+
 alias mnt='mount | grep -E ^/dev | column -t'
 
 
