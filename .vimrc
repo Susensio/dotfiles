@@ -1,6 +1,7 @@
 " Set line numbers and enable syntax highlight
-set number
 syntax on
+set number
+highlight LineNr ctermfg=grey
 
 set clipboard=unnamedplus,autoselect
 
