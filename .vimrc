@@ -1,12 +1,16 @@
 " Set line numbers and enable syntax highlight
 syntax on
 set number
-highlight LineNr ctermfg=grey
+" Color line numbers RED with root
+if $USER == 'root'
+	highlight LineNr ctermfg=red
+else
+	highlight LineNr ctermfg=grey
+endif
 
-set clipboard=unnamedplus,autoselect
-
-" Enable mouse selection
+" Enable mouse selection and clipboard
 set mouse=a
+set clipboard=unnamedplus,autoselect
 
 " Indentation
 set autoindent
