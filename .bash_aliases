@@ -15,7 +15,7 @@ dotfiles pull &> /dev/null & disown
 alias ls="ls --color -F"
 alias ll="ls -lha"
 alias la="ls -a"
-alias lt='ls --human-readable --size -1 -S --classify | more'
+alias lsize='ls --human-readable --size -1 -S --classify | more'
 
 alias cd..="cd .."
 
