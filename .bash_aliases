@@ -15,7 +15,7 @@ dotfiles pull &> /dev/null & disown
 alias ls="ls --color -F"
 alias ll="ls -lha"
 alias la="ls -a"
-alias lt='ls --human-readable --size -1 -S --classify | more'
+alias lsize='ls --human-readable --size -1 -S --classify | more'
 
 alias cd..="cd .."
 
@@ -47,3 +47,20 @@ alias venv="source ~/.venv/bin/activate"
 if [ -f ~/.bash_aliases.local ]; then
     . ~/.bash_aliases.local
 fi
+
+
+# Explain shell commands using explainshell.com
+explain () {
+  if [ "$#" -eq 0 ]; then
+    while read  -p "Command: " cmd; do
+      curl -Gs "https://www.mankier.com/api/explain/?cols="$(tput cols) --data-urlencode "q=$cmd"
+    done
+    echo "Bye!"
+  elif [ "$#" -eq 1 ]; then
+    curl -Gs "https://www.mankier.com/api/explain/?cols="$(tput cols) --data-urlencode "q=$1"
+  else
+    echo "Usage"
+    echo "explain                  interactive mode."
+    echo "explain 'cmd -o | ...'   one quoted command to explain it."
+  fi
+}

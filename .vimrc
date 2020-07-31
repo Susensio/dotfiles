@@ -39,3 +39,11 @@ cnoreabbrev Q q
 
 " Jump to the last position when reopening a file
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+
+" Enable block selection with mouse
+noremap <M-LeftMouse> <4-LeftMouse>
+inoremap <M-LeftMouse> <4-LeftMouse>
+onoremap <M-LeftMouse> <C-C><4-LeftMouse>
+noremap <M-LeftDrag> <LeftDrag>
+inoremap <M-LeftDrag> <LeftDrag>
+onoremap <M-LeftDrag> <C-C><LeftDrag>
