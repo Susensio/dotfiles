@@ -1,0 +1,39 @@
+{
+    "editor.fontSize": 12,
+    "debug.console.fontSize": 12,
+    "terminal.integrated.fontSize": 12,
+    "terminal.integrated.lineHeight": 1.2,
+    "git.confirmSync": false,
+    "todo-tree.tree.showScanModeButton": false,
+    "git-graph.showStatusBarItem": false,
+    "editor.formatOnSave": true,
+    "git.autofetch": true,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "explorer.confirmDragAndDrop": false,
+    "latex-workshop.view.pdf.viewer": "tab",
+    "explorer.confirmDelete": false,
+    "python.dataScience.askForKernelRestart": false,
+    "files.exclude": {
+        "**/__pycache__/": true,
+        "**/*.pyc": {
+            "when": "$(basename).py"
+        },
+        "**/.pytest_cache/": true,
+    },
+    "python.venvPath": "~/.venvs",
+    "python.pythonPath": "~/.venv/bin/python",
+    "python.jediEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "python.formatting.autopep8Args": [
+        "--max-line-length=100"
+    ],
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": [
+        "--max-line-length=100",
+        "--per-file-ignores=\"__init__.py:F401\"",
+        "--ignore=E226"
+    ],
+    "python.languageServer": "Microsoft",
+}
