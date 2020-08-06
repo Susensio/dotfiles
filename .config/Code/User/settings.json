@@ -26,12 +26,12 @@
     "python.jediEnabled": false,
     "python.testing.pytestEnabled": true,
     "python.formatting.autopep8Args": [
-        "--max-line-length=100"
+        "--max-line-length=99"
     ],
     "python.linting.pylintEnabled": false,
     "python.linting.flake8Enabled": true,
     "python.linting.flake8Args": [
-        "--max-line-length=100",
+        "--max-line-length=99",
         "--per-file-ignores=\"__init__.py:F401\"",
         "--ignore=E226"
     ],
