@@ -11,6 +11,12 @@ dotfiles () {
 }
 dotfiles pull &> /dev/null & disown
 
+# Upgrade system
+alias upgrade="sudo apt update && 
+sudo apt full-upgrade -y && 
+sudo apt autoremove -y && 
+sudo apt autoclean -y"
+
 # Navigation and listing
 alias ls="ls --color -F"
 alias ll="ls -lha"
