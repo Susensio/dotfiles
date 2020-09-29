@@ -8,7 +8,7 @@ else
 	highlight LineNr ctermfg=grey
 endif
 
-set title
+set laststatus=2
 set bg=dark
 
 " Enable mouse selection and clipboard
