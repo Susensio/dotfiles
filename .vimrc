@@ -8,6 +8,7 @@ else
 	highlight LineNr ctermfg=grey
 endif
 
+set title
 set bg=dark
 
 " Enable mouse selection and clipboard
