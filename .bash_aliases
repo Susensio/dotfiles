@@ -17,6 +17,8 @@ sudo apt full-upgrade -y &&
 sudo apt autoremove -y && 
 sudo apt autoclean -y"
 
+alias aptpurge="dpkg -l | grep '^rc' | awk '{print $2}' | xargs dpkg --purge"
+
 # Navigation and listing
 alias ls="ls --color -F"
 alias ll="ls -lha"
