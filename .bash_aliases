@@ -11,7 +11,7 @@ dotfiles () {
 }
 
 # Avoids password prompt if no ssh-agent is running
-if [ -z "$SSH_AUTH_SOCK" ]; then
+if [ -n "$SSH_AUTH_SOCK" ]; then
 	dotfiles pull &> /dev/null & disown
 fi
 
