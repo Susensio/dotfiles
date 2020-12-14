@@ -9,7 +9,11 @@ dotfiles () {
 		_dotfiles "$@"
 	fi
 }
-dotfiles pull &> /dev/null & disown
+
+# Avoids password prompt if no ssh-agent is running
+if [ -z "$SSH_AUTH_SOCK" ]; then
+	dotfiles pull &> /dev/null & disown
+fi
 
 # Upgrade system
 alias upgrade="sudo apt update && 
