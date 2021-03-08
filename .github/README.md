@@ -23,6 +23,8 @@ dotfiles push origin master
 
 ## Install to another system:
 
+SSH authentication must be [correctly configured](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key).
+
 ``` bash
 source <(curl -sL https://raw.githubusercontent.com/Susensio/dotfiles/master/install.sh)
 fi;
