@@ -13,3 +13,4 @@ else
   _dotfiles checkout
   echo "Checked out dotfiles.";
 fi;
+unalias _dotfiles
