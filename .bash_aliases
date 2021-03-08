@@ -61,6 +61,12 @@ if [ -f ~/.bash_aliases.local ]; then
 fi
 
 
+# Add tldr autocompletion
+if command -v tldr &> /dev/null
+then
+    complete -W "$(tldr 2>/dev/null --list)" tldr
+fi
+
 # Explain shell commands using explainshell.com
 explain () {
   if [ "$#" -eq 0 ]; then
