@@ -10,7 +10,7 @@ dotfiles () {
 	fi
 }
 
-# Avoids password prompt if no ssh-agent is running
+# Autoupdate dotfiles, avoid password prompt if no ssh-agent is running
 if [ -n "$SSH_AUTH_SOCK" ]; then
 	dotfiles pull &> /dev/null & disown
 fi
@@ -44,11 +44,6 @@ alias mnt='mount | grep -E ^/dev | column -t'
 
 # Forward X11 in trusted mode, allows clipboard sharing on remote server
 alias ssh='ssh -Y'
-
-
-# Make cd only autocomplete directories and fix sudo
-complete -d cd
-#complete -cf sudo
 
 
 # Python venv activation
