@@ -9,5 +9,3 @@ function dotfiles --description 'Dotfiles repository'
         _dotfiles $argv
     end
 end
-
-
