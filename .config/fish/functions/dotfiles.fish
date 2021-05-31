@@ -1,6 +1,6 @@
-function dotfiles --description 'Dotfiles repository'
-    alias _dotfiles '/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME'
+alias _dotfiles "/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
 
+function dotfiles --wraps '_dotfiles' --description 'Dotfiles repository'
     if test (count $argv) -eq 0
         _dotfiles status
 	else if test "$argv[1]" = 'cmp'
