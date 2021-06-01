@@ -1,6 +1,8 @@
 " Set line numbers and enable syntax highlight
 syntax on
 set number
+
+
 " Color line numbers RED with root
 if $USER == 'root'
 	highlight LineNr ctermfg=red
@@ -8,7 +10,9 @@ else
 	highlight LineNr ctermfg=grey
 endif
 
+" Always display the status bar
 set laststatus=2
+
 set bg=dark
 
 " Enable mouse selection and clipboard
