@@ -1,3 +1,15 @@
-xterm*background: black
-xterm*foreground: lightgray
+! XTerm
+!
+!xterm*background: black
+!xterm*foreground: lightgray
+!xterm*color4: DodgerBlue3
+xterm*faceName: Dejavu Sans Mono
+xterm*faceSize: 10
 xterm*renderFont: true
+xterm*saveLines: 10000
+
+
+! GLOBAL THEME
+!
+#include ".config/Xresources.d/base16-bright-256.Xresources"
+
