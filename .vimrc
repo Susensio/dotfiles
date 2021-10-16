@@ -73,5 +73,17 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 call plug#begin('~/.vim/plugged')
 
 Plug 'dag/vim-fish'
+Plug 'mboughaba/i3config.vim'
+" Plug 'chriskempson/base16-vim'
 
 call plug#end()
+
+" Automatic detection of i3 config filetype
+aug i3config_ft_detection
+  au!
+  au BufNewFile,BufRead ~/.config/i3/config set filetype=i3config
+aug end
+
+" Enable per file commands
+set modeline
+" colorscheme base16-bright
