@@ -2,7 +2,7 @@
 
 # Start Keyring
 eval $(gnome-keyring-daemon --start)
-export SSH_AUTH_SOCK
+export GNOME_KEYRING_CONTROL GNOME_KEYRING_PID GPG_AGENT_INFO SSH_AUTH_SOCK
 
-exec i3
+exec dbus-launch i3
 #exec dbus-launch --autolaunch=$(cat /var/lib/dbus/machine-id) i3
