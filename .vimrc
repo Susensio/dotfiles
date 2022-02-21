@@ -4,11 +4,14 @@ set number
 
 
 " Color line numbers RED with root
-if $USER == 'root'
+let ppid=systemlist("awk '{print $4}' /proc/" . getpid() . "/stat")[0]
+let ppname=systemlist("ps -p " . ppid . " -o comm=")[0]
+if $USER == 'root' || ppname == 'sudoedit'
 	highlight LineNr ctermfg=red
 else
 	highlight LineNr ctermfg=grey
 endif
+
 
 " Always display the status bar
 set laststatus=2
