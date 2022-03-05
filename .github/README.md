@@ -23,7 +23,7 @@ dotfiles push origin master
 
 ## Install to another system:
 
-SSH authentication must be [correctly configured](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key).
+Personal access token authentication must be [correctly configured](https://florianwinkelbauer.com/posts/2021-05-27-git-gnome-keyring/) in order to be saved and not prompted everytime.
 
 ``` bash
 source <(curl -sL https://raw.githubusercontent.com/Susensio/dotfiles/master/.github/install.sh)
