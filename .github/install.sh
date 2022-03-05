@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 alias _dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
-git clone --bare https://github.com:Susensio/dotfiles.git $HOME/.dotfiles.git/
+git clone --bare https://github.com/Susensio/dotfiles.git $HOME/.dotfiles.git/
 _dotfiles config --local status.showUntrackedFiles no
 _dotfiles checkout 
 
