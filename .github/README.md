@@ -26,8 +26,8 @@ dotfiles push origin master
 Personal access token authentication must be [correctly configured](https://florianwinkelbauer.com/posts/2021-05-27-git-gnome-keyring/) in order to be saved and not prompted everytime.
 
 ``` bash
-source <(curl -sL https://raw.githubusercontent.com/Susensio/dotfiles/master/.github/install.sh)
-fi;
+wget https://raw.githubusercontent.com/Susensio/dotfiles/master/.github/install.sh
+bash install.sh
 ```
 
 ## Credits
