@@ -77,3 +77,9 @@ explain () {
     echo "explain 'cmd -o | ...'   one quoted command to explain it."
   fi
 }
+
+
+## Load environment variables
+#if [ -f ~/.env ]; then
+#    export $(cat .env | xargs)
+#fi

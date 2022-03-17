@@ -11,5 +11,5 @@ xterm*saveLines: 10000
 
 ! GLOBAL THEME
 !
-#include ".config/Xresources.d/base16-bright-256.Xresources"
+#include "Xresources.d/base16-bright-256.Xresources"
 
