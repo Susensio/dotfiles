@@ -79,6 +79,7 @@ explain () {
 }
 
 
+
 ## Load environment variables
 #if [ -f ~/.env ]; then
 #    export $(cat .env | xargs)
