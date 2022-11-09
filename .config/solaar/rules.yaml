@@ -15,7 +15,6 @@
 - Rule:
   - Test: thumb_wheel_down
   - Execute: [pactl, set-sink-volume, '@DEFAULT_SINK@', -2%]
-- Rule: []
 - Rule:
   - Test: 'False'
   - KeyPress: [Shift_L, XF86_AudioLowerVolume]

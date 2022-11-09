@@ -90,7 +90,7 @@
       "dpi-sliding": false,
       "hires-smooth-resolution": "ignore",
       "mouse-gestures": false,
-      "reprogrammable-keys": false,
+      "reprogrammable-keys": true,
       "smart-shift": false,
       "thumb-scroll-mode": false
     },

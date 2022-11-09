@@ -37,3 +37,4 @@ export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
 export WGETRC="$XDG_CONFIG_HOME/wgetrc"
 export ICEAUTHORITY="$XDG_CACHE_HOME"/ICEauthority
 #export XAUTHORITY="$XDG_RUNTIME_DIR"/Xauthority
+export R_LIBS_USER="$XDG_DATA_HOME"/R/libs
