@@ -3,6 +3,6 @@ function ls --wraps=exa --description 'List contents in directory'
 		exa --group-directories-first $argv
 	else
 		source /usr/share/fish/functions/ls.fish
-		ls $argv
+		command ls $argv
 	end
 end
