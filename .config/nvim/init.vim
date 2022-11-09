@@ -11,7 +11,7 @@ set shiftwidth=4
 
 
 " Enable mouse selection and clipboard
-set mouse=a
+set mouse=v
 set clipboard+=unnamedplus
 
 
