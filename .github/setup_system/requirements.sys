@@ -1,14 +1,16 @@
+curl
+wget
 fish
 exa
 fd-find
+htop
 git
 git-lfs
 gh
-vim-gtk3
+# vim-gtk3
+neovim
+# python3-neovim
 bat
 duf
 thefuck
-htop
 tldr
-neovim
-python3-neovim
