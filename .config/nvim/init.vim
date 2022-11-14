@@ -55,4 +55,6 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 lua require('init')
 
 
+" Maintain default background color
+autocmd ColorScheme * highlight Normal ctermbg=NONE guibg=NONE
 colorscheme monokai
