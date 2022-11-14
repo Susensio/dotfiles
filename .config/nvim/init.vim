@@ -58,3 +58,4 @@ lua require('init')
 " Maintain default background color
 autocmd ColorScheme * highlight Normal ctermbg=NONE guibg=NONE
 colorscheme monokai
+
