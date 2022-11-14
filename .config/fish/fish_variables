@@ -5,6 +5,10 @@ SETUVAR --export XDG_DATA_HOME:/home/susensio/\x2elocal/share
 SETUVAR --export XDG_STATE_HOME:/home/susensio/\x2elocal/state
 SETUVAR --export _JAVA_OPTIONS:\x2dDjava\x2eutil\x2eprefs\x2euserRoot\x3d/home/susensio/\x2econfig/java
 SETUVAR __fish_initialized:3400
+SETUVAR _fish_abbr_za:zoxide\x20add
+SETUVAR _fish_abbr_zq:zoxide\x20query
+SETUVAR _fish_abbr_zqi:zoxide\x20query\x20\x2di
+SETUVAR _fish_abbr_zr:zoxide\x20remove
 SETUVAR fish_color_autosuggestion:555
 SETUVAR fish_color_cancel:normal
 SETUVAR fish_color_command:white\x1e\x2do

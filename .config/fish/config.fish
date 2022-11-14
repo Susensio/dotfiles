@@ -1,5 +1,4 @@
 set PATH ~/.local/bin $PATH
-set -x EDITOR vim
 
 
 # Read exports from .profile
@@ -25,4 +24,8 @@ egrep "^export " ~/.profile | while read e
 
 	#echo "set -xg '$var' '$value' (via '$e')"
 	set -xg $var $value
+end
+
+if command -qs zoxide
+	zoxide init fish | source
 end
