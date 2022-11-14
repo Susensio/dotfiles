@@ -2,7 +2,6 @@
 syntax on
 set number
 
-
 " Indentation
 set autoindent
 set smartindent
@@ -11,7 +10,7 @@ set shiftwidth=4
 
 
 " Enable mouse selection and clipboard
-set mouse=v
+set mouse=a
 set clipboard+=unnamedplus
 
 
@@ -35,9 +34,14 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
 endif
 
 " List plugins to be used
-call plug#begin('~/.vim/plugged')
+call plug#begin()
+" The default plugin directory will be as follows:
+"   - Vim (Linux/macOS): '~/.vim/plugged'
+"   - Neovim (Linux/macOS/Windows): stdpath('data') . '/plugged'
 
 Plug 'dag/vim-fish'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'tanvirtin/monokai.nvim'
 
 call plug#end()
 
@@ -46,3 +50,9 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
   \| PlugInstall --sync | source $MYVIMRC
 \| endif
 
+
+" Config plugins in lua
+lua require('init')
+
+
+colorscheme monokai
