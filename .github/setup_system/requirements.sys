@@ -12,5 +12,6 @@ neovim
 # python3-neovim
 bat
 duf
+gdu
 thefuck
 tldr
