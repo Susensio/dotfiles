@@ -27,15 +27,17 @@ if [ -d "$HOME/.local/bin" ] ; then
 fi
 
 
+# Honor XDG Base Directory specification
 export XDG_CONFIG_HOME=$HOME/.config
 export XDG_CACHE_HOME=$HOME/.cache
 
+export PYTHONSTARTUP=$XDG_CONFIG_HOME/python/startup.py
 export IPYTHONDIR=$XDG_CONFIG_HOME/ipython
 export JUPYTER_CONFIG_DIR=$XDG_CONFIG_HOME/jupyter
 export GNUPGHOME="$XDG_DATA_HOME"/gnupg
 export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
 export WGETRC="$XDG_CONFIG_HOME/wgetrc"
 export ICEAUTHORITY="$XDG_CACHE_HOME"/ICEauthority
-#export XAUTHORITY="$XDG_RUNTIME_DIR"/Xauthority
+export XAUTHORITY="$XDG_RUNTIME_DIR"/Xauthority
 #export R_LIBS_USER="$XDG_DATA_HOME"/R
 export EDITOR=nvim
