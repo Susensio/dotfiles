@@ -2,6 +2,9 @@
 syntax on
 set number
 
+" Persistent undo
+set undofile
+
 " Indentation
 set autoindent
 set smartindent
